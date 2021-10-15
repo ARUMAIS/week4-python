@@ -7,7 +7,8 @@
 # Licensing      : (c) 2021 Aishwarya,LYIT
 #                  Available under GNU Public License (GPL)
 # Description    
-# ---------------------------
+# Encrypt the given string
+# caculate the time taken to encrypt the string
 """
 import base64 #import base64 module
 import timeit #import timtit module
