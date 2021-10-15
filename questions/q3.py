@@ -19,6 +19,7 @@ def add_course_details:
     course_dict = {"Msc in DevOps": ('IT902'), "Msc in Cloud Computing": ('IT903')}
 
 def update_course_details:
+    while
     Enter course name to update (press q to exit):
         check and update the course_dict
 
