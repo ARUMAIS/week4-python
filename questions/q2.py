@@ -9,8 +9,8 @@
 # Description    
 # ---------------------------
 """
-import base64
-import timeit
+import base64 #import base64 module
+import timeit #import timtit module
 
 def encrypt(message):
     '''

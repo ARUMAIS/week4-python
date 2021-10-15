@@ -10,7 +10,7 @@
 # System information
 # using platform and os module
 """
-import platform  #import the random module
+import platform  #import the platform module
 import os        #for the operating system
 
 def print_config_details():
