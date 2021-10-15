@@ -11,10 +11,18 @@
 """
 import base64
 import timeit
+
 def encrypt(message):
+    '''
+           Encrypt the given string message
+           Parameters:
+           message
+           Returns:
+           none
+    '''
     message_bytes = message.encode('ascii')
     base64_bytes = base64.b64encode(message_bytes)
     print("Encoded: {}".format(base64_bytes))
 
 if __name__ == "__main__":
-    print(timeit.timeit("encrypt(message)", setup="from __main__ import encrypt; message='aishu'", number=1))
+    print(timeit.timeit("encrypt(message)", setup="from __main__ import encrypt; message='Hello'", number=1))
