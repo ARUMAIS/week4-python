@@ -12,15 +12,21 @@
 
 def add_course_details:
     while 1:
-        Enter course name (press q to exit):
-            course_name
+        course_name = input("Enter the LYIT course:")
+        Enter coursename(pressqtoexit):
+        course_code = input("Enter the course code:")
         Enter course code (press q to exit):
-            couse_code
+            course_code
     course_dict = {"Msc in DevOps": ('IT902'), "Msc in Cloud Computing": ('IT903')}
 
 def update_course_details:
-    while
-    Enter course name to update (press q to exit):
+    while 1:
+        update_course_name = input("Enter the course name to update:")
+
+    exit = input("press q to exit:")
+       if quit == "q":
+           print("Thank you")
+           break
         check and update the course_dict
 
 def print_course_details:
@@ -32,16 +38,24 @@ def print_common_names:
         for i in range(dict.lengh):
             internal_split = dict[i].split("")
             if keysplit intersection internal_split
-                print (key and dict[i])
+              print (key and dict[i])
 
 if __name__ == "__main__":
-    while 1:
-        Select 1 of options below
-            1. Enter course detail and course code
+ print("----MENU----")
+ print("1.Add LYIT course & codes")
+ print("2.Edit the course name")
+ print("3.Print the data in the list")
+ print("4.Print the common course names")
+ choice = input("Enter the option 1/2/3/4:")
+while 1:
+        if choice in ("1","2","3","4"):
+            if choice == "1":
                 add_course_details()
-            2. Edit course name
+            elif choice == "2":
                 update_course_details()
-            3. Pretty print data
+            elif choice == "3":
                 print_course_details()
-            4. Print common names
+            elif choice == "4":
                 print_common_names()
+        else:
+           print("Enter the valid option")
